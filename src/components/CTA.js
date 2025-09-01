@@ -1,7 +1,7 @@
 // src/components/CTA.js
 
 export default function CTA() {
-  const whatsappNumber = '6281234567890'; // <-- GANTI DENGAN NOMOR ANDA
+  const whatsappNumber = '6281235033149'
   const message = 'Halo PijatBayi Sehat, saya tertarik untuk memesan sesi pijat bayi. Bisakah saya mendapatkan info jadwal yang tersedia?';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

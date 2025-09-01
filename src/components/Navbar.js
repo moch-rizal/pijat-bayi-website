@@ -11,8 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Navbar() {
-  // Variabel WhatsApp kita letakkan di sini agar bisa dipakai di kedua navbar
-  const whatsappNumber = '6281235033149'; // <-- GANTI DENGAN NOMOR ANDA
+  const whatsappNumber = '6281235033149';
   const message = 'Halo PijatBayi Sehat, saya tertarik untuk memesan sesi pijat bayi. Bisakah saya mendapatkan info jadwal yang tersedia?';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
