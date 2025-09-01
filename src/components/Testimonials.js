@@ -1,3 +1,7 @@
+// src/components/Testimonials.js
+
+import Image from 'next/image'; // 1. IMPORT Image
+
 const testimonials = [
   {
     quote: 'Anakku jadi tidur lebih nyenyak dan jarang rewel sejak rutin pijat di sini. Terapisnya sabar dan telaten banget. Recommended!',
@@ -23,9 +27,17 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial) => (
             <div key={testimonial.author} className="bg-white p-8 rounded-xl shadow-lg">
-              <p className="text-gray-600 italic mb-6">"{testimonial.quote}"</p>
+              {/* 2. Perbaiki masalah kutip dengan membuatnya italic */}
+              <p className="text-gray-600 italic mb-6">&ldquo;{testimonial.quote}&rdquo;</p>
               <div className="flex items-center">
-                <img src={testimonial.avatar} alt={testimonial.author} className="w-12 h-12 rounded-full mr-4" />
+                {/* 3. Ganti <img> dengan <Image> */}
+                <Image 
+                  src={testimonial.avatar} 
+                  alt={testimonial.author} 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full mr-4" 
+                />
                 <div>
                   <p className="font-bold text-gray-800">{testimonial.author}</p>
                   <p className="text-sm text-gray-500">{testimonial.location}</p>
