@@ -57,10 +57,10 @@ export default function PijatKolikPage() {
             <h3 className="text-2xl font-bold text-gray-800">Detail Sesi & Investasi</h3>
             <p className="text-gray-600 mt-2 mb-6">Satu sesi penuh untuk kenyamanan maksimal buah hati Anda.</p>
             <div className="text-5xl font-bold text-teal-600 mb-2">
-              Rp 150.000
+              Rp 100.000
             </div>
             <div className="text-gray-500 mb-8">
-              Durasi Sesi: <strong>45 Menit</strong>
+              Durasi Sesi: <strong>30 enit</strong>
             </div>
             <a 
               href={whatsappUrl}
