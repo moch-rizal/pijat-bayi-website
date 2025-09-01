@@ -13,12 +13,16 @@ export const metadata = {
   description: 'Layanan pijat bayi profesional untuk relaksasi, stimulasi, dan tumbuh kembang optimal buah hati Anda.',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="id" className="scroll-smooth">
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main> {/* Halaman akan muncul di sini */}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
