@@ -3,7 +3,7 @@
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 export default function PijatKolikPage() {
-  const whatsappNumber = '6281234567890'; // <-- GANTI DENGAN NOMOR ANDA
+  const whatsappNumber = '6281235033149';
   const message = 'Halo, saya tertarik untuk memesan sesi Pijat Atasi Kolik & Konstipasi untuk anak saya. Kapan jadwal yang tersedia?';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
@@ -60,7 +60,7 @@ export default function PijatKolikPage() {
               Rp 100.000
             </div>
             <div className="text-gray-500 mb-8">
-              Durasi Sesi: <strong>30 enit</strong>
+              Durasi Sesi: <strong>30 Menit</strong>
             </div>
             <a 
               href={whatsappUrl}
